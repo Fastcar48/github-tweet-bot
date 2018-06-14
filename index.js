@@ -3,11 +3,11 @@
 //Modules
 const express = require('express')
 const bodyParser = require("body-parser")
+const helmet = require('helmet')
 const twit = require('twit')
 
 //Config
 const port = process.env.PORT || 5000
-const apiKey = process.env.key
 
 var T = new twit({
 	consumer_key: process.env.twitterConsumerKey,
@@ -19,9 +19,10 @@ var T = new twit({
 //Main code
 var app = express()
 app.use(bodyParser.json())
+app.use(helmet())
 
 app.post('/',function(req,res){
-	if (req.query.key === apiKey){
+	if (req.query.key === process.env.key){
 		const commitJson = req.body
 		if (typeof commitJson.zen === 'undefined'){
 			const repositoryName = commitJson.repository.name
