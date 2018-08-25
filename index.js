@@ -3,7 +3,6 @@
 //Dependencies
 const express = require('express')
 const bodyParser = require("body-parser")
-const helmet = require('helmet')
 const twit = require('twit')
 
 var T = new twit({
@@ -14,9 +13,8 @@ var T = new twit({
 })
 
 //Main code
-var app = express()
+const app = express()
 app.use(bodyParser.json())
-app.use(helmet())
 
 function tweet(msg, response) {
 	T.post('statuses/update', { status: msg }, function (err, data) {

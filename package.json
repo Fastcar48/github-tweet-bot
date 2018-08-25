@@ -1,7 +1,7 @@
 {
 	"name": "github-tweet-bot",
 	"description": "A webhook based bot that tweets out how many files were added, modified, or removed as well as including a link to view the changes.",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/fasty48/github-tweet-bot"
@@ -10,14 +10,13 @@
 	"dependencies": {
 		"body-parser": "^1.18.3",
 		"express": "^4.16.3",
-		"helmet": "^3.12.1",
 		"twit": "^2.2.11"
 	},
 	"scripts": {
 		"start": "node index.js"
 	},
 	"engines": {
-		"node": "^10.5.0",
-		"npm": "^6.1.0"
+		"node": "^10.x",
+		"npm": "^6.x"
 	}
 }
