@@ -6,7 +6,7 @@
 		"type": "git",
 		"url": "https://github.com/fasty48/github-tweet-bot"
 	},
-	"license": "MIT",
+	"license": "GPL-3.0-only",
 	"dependencies": {
 		"body-parser": "^1.18.3",
 		"express": "^4.16.3",
