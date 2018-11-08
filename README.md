@@ -1,3 +1,5 @@
+**Archived: This mini-project had some bugs in it. I don't plan to update this in the future.**
+
 # Github Tweet Bot
 
 [![dependencies Status](https://david-dm.org/fasty48/github-tweet-bot/status.svg "dependencies Status")](https://david-dm.org/fasty48/github-tweet-bot)
